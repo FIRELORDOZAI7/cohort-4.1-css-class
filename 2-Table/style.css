@@ -14,15 +14,15 @@ tr{
 }
 th,
 td{
-    border: 2px solid #efefef;
+    border: 2px solid #ddd9d9;
     padding: 12px;
     font-size: 1.5rem;
 }
 tr:nth-child(Odd) {
-    background-color: darkgoldenrod;
+    background-color: white;
     color: cadetblue;
 }
 tr:nth-child(Even) {
-    background-color: coral;
+    background-color: rgb(170, 80, 255);
     color: aqua;
 }
