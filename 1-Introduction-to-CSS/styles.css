@@ -1,38 +1,56 @@
-h4{
-    color: blueviolet;
-    border: 2px dotted darkolivegreen;
-    padding: 30px;
-}
-
-span{
-    border: 4px groove darkcyan;
-    padding: 15px;
-}
-/* universal selector */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid gold; */
 }
-/* element selector */
-table{
-    border-collapse: collapse;
+.my-heading{
+    border: 3px solid green;
+    width: 70%;
+    margin: 10px 20px;
+    padding: 20px;
+    background-color: dodgerblue;
+    color: white;
     text-align: center;
-    margin: 2rem;
 }
-tr{
-    text-align: left;
+.title{
+    margin-bottom: 1.5rem;
 }
-th,
-td{
-    border: 2px solid #ddd9d9;
-    padding: 12px;
+.desc{
     font-size: 1.5rem;
+    text-decoration: overline;
 }
-tr:nth-child(Odd) {
-    background-color: white;
-    color: cadetblue;
+#my-para{
+    color: blueviolet;
 }
-tr:nth-child(Even) {
-    background-color: rgb(170, 80, 255);
-    color: aqua;
+h3, h4, h5{
+    color: green;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+h1.my-first-heading{
+    color: aquamarine;
+}
+h2.my-second-heading{
+    color: indigo;
+}
+[href]{
+    color: chartreuse;
+}
+input{
+    padding: 1rem;
+}
+::placeholder{
+    color: yellow;
+}
+button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 1.5rem;  
+}
+.container p{
+    color: blue;
+}
+.container-two >p{
+    color: palevioletred;
 }

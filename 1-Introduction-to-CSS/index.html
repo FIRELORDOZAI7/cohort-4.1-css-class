@@ -3,139 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction to CSS</title>
-    <link rel="stylesheet" href="./styles.css">
-    <style>
-      h1 {
-        /* css ruleset */
-        /* property-name: value; */
-        color: green;
-        text-align: center;
-        font-size: 100px;
-      }
-    </style>
-    <style>
-      h2 {
-        color: red;
-        text-align: right;
-        font-size: 1.3rem;
-      }
-      ul {
-        list-style: none; 
-        text-align: right;
-      }
-      li {
-        /* Margin is the space around an html element */
-        /* margin: top right bottom left; */
-        /* margin: 10px 10px 10px 10px; */
-        /* margin: top-and-right bottom-and-left; */
-        margin: 20px 10px;
-      }
-      p {
-        border: 1px solid red;
-        margin: 50px;
-        /* padding is the space within a html elements/tags */
-        padding: 30px;
-        background-color: indianred;
-        color: aliceblue;
-        font-size: 2rem;
-        font-weight: bolder;
-      }
-    </style>
+    <title>Learning CSS Selectors</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>I'm Learning CSS which means CASCADING STYLE SHEET</h1>
-    <!-- All elements/tags has default font size of 16px -->
-    <!-- 16px is 1rem-->
-    <!-- 16px === 1rem-->
-    <h2>Three ways of adding CSS to HTML elements and tags</h2>
-    <ul>
-      <li>using the <em>STYLE</em> tag/elements</li>
-      <li>using the <em>INLINE</em> tag/elements</li>
-      <li>using the <em>EXTERNAL</em> tag/elements</li>
-    </ul>
+    <!-- Class Selector -->
+    <h1>CLASS SECTION</h1>
+    <section class="my-heading">
+      <h1 class="title">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, commodi!
+      </h1>
+      <p class="desc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+        exercitationem in nobis voluptates esse perferendis incidunt, a quisquam
+        aspernatur optio placeat iste. Saepe laudantium et quibusdam doloribus
+        numquam dolorem pariatur fugiat iste nisi. Qui eaque quia ipsam placeat
+        deleniti nam, sit aspernatur molestias porro incidunt quod, totam
+      </p>
+    </section>
+    <!-- Class Selector -->
 
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti,
-      molestiae doloribus omnis similique consectetur quam sapiente? Facere,
-      asperiores voluptatum.
+    <!-- ID Selector -->
+    <h1>ID SECTION</h1>
+    <p id="my-para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa nemo
+      expedita illo omnis atque rerum laudantium. Nemo pariatur blanditiis
+      nesciunt rerum ullam recusandae similique?
     </p>
+    <!-- ID Selector -->
 
-    <div>
-      <span>Adding CSS to an HTML elements using inline elements</span>
-      <h3
-        style="
-          background-color: blue;
-          color: beige;
-          padding: 30px;
-          text-align: center;
-        "
-      >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
-        optio quos libero? Ad ut provident beatae impedit voluptatum commodi,
-        perspiciatis dolore mollitia dolorum voluptas? Odit possimus veniam
-        excepturi unde dolorem rerum, tenetur repellat repudiandae in corporis,
-        asperiores error harum debitis?
-      </h3>
-    </div>
-    <span>Adding CSS to an HTML elements using external elements</span>
-    <div>
-      <h4>Lorem ipsum dolor sit amet.</h4>
+    <!-- Element Element Selector -->
+    <section>
+      <h3>Lorem ipsum dolor sit.</h3>
+      <h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officia.
+      </h4>
       <h5>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
-        soluta quam saepe officia veritatis distinctio laboriosam aspernatur.
-        Odio rem nisi rerum explicabo at minima quibusdam facilis porro labore,
-        officia est.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+        reiciendis minus adipisci quae ad nobis. Sint ullam quas iste mollitia.
       </h5>
+    </section>
+    <!-- Element Element Selector -->
 
-      <table>
-        <tr>
-          <th>S/N</th>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email Address</th>
-          <th>Phone Number</th>
-        </tr>
-        <tr>
-          <td>001</td>
-          <td>Ariana</td>
-          <td>Grande</td>
-          <td>arianagrande@gmail.com</td>
-          <td>+234567439026</td>
-        </tr>
-        <tr>
-          <td>002</td>
-          <td>Karen</td>
-          <td>Litigar</td>
-          <td>Karenlitigar@gmail.com</td>
-          <td>+12345768689</td>
-        </tr>
-        <tr>
-          <td>003</td>
-          <td>Jason</td>
-          <td>Statham</td>
-          <td>itsjasonduhhh@email.com</td>
-          <td>+245757689998</td>
-        </tr>
-        <tr>
-          <td>004</td>
-          <td>Dwayne</td>
-          <td>Johnson</td>
-          <td>therock23@gmail.com</td>
-          <td>+21236745758</td>
-        </tr>
-        <tr>
-          <td>005</td>
-          <td>Timothee</td>
-          <td>Chalamatte</td>
-          <td>Timotheechalamatee@gmail.com</td>
-          <td>+123654446558</td>
-        </tr>
-        
-      </table>
-    </body>
-  </html>
-  
+    <!-- Element Class Selector -->
+    <h1 class="my-first-heading">Element Class Selector</h1>
+    <section>
+      <h1 class="my-first-heading">Lorem, ipsum dolor.</h1>
+      <h2 class="my-second-heading">
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+      </h2>
+    </section>
+    <!-- Element Class Selector -->
+
+    <!-- Applying Styling to Attribute -->
+    <a href="/contact">Contact Us</a>
+    <input type="text" placeholder="Enter firstname" />
+    <!-- Applying Styling to Attribute -->
+
+    <!-- Pseudo Classes in CSS -->
+    <button>Click me</button>
+    <!-- Pseudo Classes in CSS -->
+
+    <!-- CSS Combinator -->
+    <!-- Descendant -->
+
+    <p>I am the first p</p>
+
+    <div class="container">
+      <p>I am the second child</p>
+      <p>I am the third child</p>
     </div>
+    
+
+    <p>I am the last child</p>
+    <!-- Descendant -->
+    <!-- CSS Combinator -->
+
+    <!-- Child Combinator -->
+    <div class="container-two"></div>
+    <p>First Child</p>
+    <p>First Child</p>
+    <!-- Child Combinator -->
   </body>
 </html>
